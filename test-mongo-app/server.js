@@ -1,10 +1,9 @@
 // server.js
-const User = require("./src/User.model");
-const express = require("express");
+const User = require("./src/User.model");const express = require("express");
 const app = express();
 const connectDb = require("./src/connection");
 
-const PORT = 8080;
+const PORT = 8081;
 
 app.get("/users", async (req, res) => {
     const users = await User.find();
@@ -19,11 +18,10 @@ app.get("/users", async (req, res) => {
   
     res.send("User created \n");
   });
-
 app.listen(PORT, function() {
   console.log(`Listening on ${PORT}`);
 
   connectDb().then(() => {
     console.log("MongoDb connected");
   });
-}); 
+});
