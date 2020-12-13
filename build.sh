@@ -12,5 +12,4 @@ npm i cors
 cd ..
 
 echo "1/1 using docker compose"
-docker-compose up --build
-docker stop
+#docker-compose up --build
