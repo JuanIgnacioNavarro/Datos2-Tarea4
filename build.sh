@@ -1,12 +1,12 @@
 echo "Getting dependencies of api folder"
 cd api
 npm i express mongoose
-#npm install --save-dev nodemon
+npm install --save-dev nodemon
 cd ..
 
 echo "Getting dependencies of ui folder"
 cd ui
-#npm start
+npm start
 npm i axios
 npm i cors
 cd ..
