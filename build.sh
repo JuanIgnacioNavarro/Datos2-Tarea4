@@ -1,9 +1,14 @@
-echo "Getting dependencies"
-cd ui
-npm install
-cd ..
+echo "Getting dependencies of api folder"
 cd api
 npm i express mongoose
+npm install --save-dev nodemon
+cd ..
+
+echo "Getting dependencies of ui folder"
+cd ui
+npm install
+npm i axios
+npm i cors
 cd ..
 
 echo "1/1 using docker compose"
