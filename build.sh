@@ -6,7 +6,7 @@ cd ..
 
 echo "Getting dependencies of ui folder"
 cd ui
-npm install
+npm start
 npm i axios
 npm i cors
 cd ..
